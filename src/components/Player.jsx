@@ -9,9 +9,9 @@ export default function Player({ initialName, symbol, isActive }) {
   }
 
   function handleChange(event) {
-    console.log(event);
+    const newPlayerName = event.target.value;
 
-    setPlayerName(event.target.value);
+    setPlayerName(newPlayerName);
   }
 
   let editablePlayerName = <span className="player-name">{playerName}</span>;
